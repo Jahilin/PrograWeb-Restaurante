@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+</head>
+<body>
+
+    <header>
+        <h1>🏬 Pupusas Miraflores</h1>
+        <img src="imagenes/pupusas.jpg" alt="Pupusas en la Pulpería Beliz en Colonia Villa los Laureles Honduras" width="1280" height="720">
+        <p>La calidad es nuestro sabor</p>
+        <p>📞 Teléfono: +504 </p>
+        <p>📍 Dirección: Residencial Plaza, Tegucigalpa, Honduras</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="menu.html">Menú</a>
+            </li>
+            <li>
+                <a href="reservaciones.html">Reservaciones</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>            
+        </ul>
+    </nav>
+
+    <main>
+        <form action="reservacion.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Reservación</legend>
+
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Ingrese su nombre completo" required
+                        minlength="10" maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Número de teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ingrese su número de teléfono" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Hora</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="invitados">Número de personas</label>
+                    <input type="number" id="invitados" name="invitados" min="1" max="20" required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Sucursal">Seleccione:</label>
+                    <select name="Sucursal" id="Sucursal" required>
+                        <option value="">-- Seleccione una Sucursal --</option>
+                        <option value="Sucursal1">Sucursal 1</option>
+                        <option value="Sucursal2">Sucursal 2</option>
+                        <option value="Sucursal3">Sucursal 3</option>
+                    </select>
+                </div>  
+            
+
+                <button type="submit">Reservar</button>
+
+            </fieldset>
+        </form>
+
+    </main>
+
+
+</body>
+</html>
