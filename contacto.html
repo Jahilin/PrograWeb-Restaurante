@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, inital-scale=1.0">
+        <meta name="description" content="Restaurante">
+    </head>
+    <header>
+
+    </header>
+
+    <body>
+<section>
+            <h2>Puede visitarnos en nuestras redes sociales o comunicarse atraves de nuestro formulario para que un agente se ponga en contacto con usted</h2>
+            <br><br>
+            <form action="cityofbarbers/contacto/api/contactos" method="post" enctype="multipart/form-data">
+
+                <fieldset>
+                    <legend>Datos personales</legend> 
+                    <label> Nombre </label>
+                    &emsp;
+                    <input type="text" name="nombre" required minlength="6" maxlength="80" placeholder="Ejemplo: Jose ">
+                    <br><br>
+                    <label> Apellido </label>
+                    &emsp;
+                    <input type="text" name="apellido" required minlength="6" maxlength="80" placeholder="Ejemplo: Corea">
+                    <br><br>
+                    <label> email </label>
+                    &emsp;&emsp;
+                    <input type="email" name="email" required minlength="6" maxlength="80" placeholder="Ejemplo: Jose@unah.hn ">
+                    <br><br>
+                    <label> Telefono </label>
+                    &emsp;
+                    <input type="text" name="telefono" required minlength="6" placeholder=" 99999999">
+                    <br><br>
+                    <label> Servicio </label>
+                    &emsp;
+                    <select >
+                        &emsp;
+                        <option>
+                            Elige el tipo de Servicio
+                        </option>
+                        <option>
+                            Pollo Chuco
+                        </option>
+                          <option>
+                            tajaditas preparadas
+                        </option>
+                          <option>
+                            cafe con leche
+                        </option>
+                          <option>
+                            jugos naturales
+                        </option>
+                    </select>
+                   <button type="submit">
+                    enviar
+                   </button>
+                </fieldset>
+
+            </form>
+        </section>
+    </body>
+</html>
